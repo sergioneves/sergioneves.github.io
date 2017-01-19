@@ -2,10 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cwiczenia</title>
+    <title>Formularz Zadanie</title>
 </head>
+
 <body>
-  <p>Tresc paragrafu pierwszego</p>
-  <p>Tresc paragrafu drugiego</p>  
+    <div id="header">
+        <div id="main-header-text">Zapisy na szkolenie</div>
+   </div>
+   <form action="https://formspree.io/sergiosniegocki@gmail.com" method="post">
+    <label for="imie">Imię: </label>
+    <br/>
+    <input type="text" name="imie" id="imie">
+    <br/>
+    <label id="nazwisko">Nazwisko:</label>
+    <br/>
+    <input type="text" name="nazwisko" id="nazwisko">
+    <br/>
+    <label for="email">Email:</label>
+    <br/>
+    <input type="email" id="email" name="user_email"> 
+    <br/>
+    <label id="numer telefonu">Numer telefonu:</label>
+    <br/>
+    <input type="number" name="numer telefonu" id="numer telefonu">
+    <br/>
+    <label id="miasto">Wybierz miasto:</label>
+    <br/>
+    <select>
+       <option value="cracow">Kraków</option>
+       <option value="warsaw">Warszawa</option>
+       <option value="gdansk">Gdańsk</option>
+    </select> 
+    <br/>
+    <label id="plec">Płeć:</label>
+    <br/>
+    <input type="radio" name="plec" value="meska" checked> Mężczyzna<br>
+    <input type="radio" name="plec" value="zenska"> Kobieta
+    <br/>
+    <label id="Zgoda dane osobowe">Proszę zaznaczyć:</label>
+    <br/>
+    <input type="checkbox" name="zgoda" value="nie"> Wyrażam zgodę na przekazanie moich danych osobowych<br>
+    <input type="checkbox" name="odmowa" value="tak">  Nie wyrażam zgody na przekazanie moich danych osobowych
+    <br/>
+    <label id="Wiadomosc">Wiadomosc:</label>
+    <br/>
+    <textarea type="text" name="wiadomosc" id="wiadomosc"></textarea>
+    <br/>
+    <input type="submit" value="Wyslij"> 
+   </form>
 </body>
-</html>e
+</html>
