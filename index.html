@@ -9,12 +9,12 @@
     <div id="header">
         <div id="main-header-text">Zapisy na szkolenie</div>
    </div>
-   <form action="https://formspree.io/sergiosniegocki@gmail.com" method="post">
+   <form action="https://sergiosniegocki@gmail.com" method="post">
     <label for="imie">Imię: </label>
     <br/>
     <input type="text" name="imie" id="imie">
     <br/>
-    <label id="nazwisko">Nazwisko:</label>
+    <label for="nazwisko">Nazwisko:</label>
     <br/>
     <input type="text" name="nazwisko" id="nazwisko">
     <br/>
@@ -22,9 +22,9 @@
     <br/>
     <input type="email" id="email" name="user_email"> 
     <br/>
-    <label id="numer telefonu">Numer telefonu:</label>
+    <label for="tel">Numer telefonu:</label>
     <br/>
-    <input type="number" name="numer telefonu" id="numer telefonu">
+    <input type="number" id="tel">
     <br/>
     <label id="miasto">Wybierz miasto:</label>
     <br/>
@@ -34,21 +34,22 @@
        <option value="gdansk">Gdańsk</option>
     </select> 
     <br/>
-    <label id="plec">Płeć:</label>
+    <label id="gender">Płeć:</label>
     <br/>
     <input type="radio" name="plec" value="meska" checked> Mężczyzna<br>
     <input type="radio" name="plec" value="zenska"> Kobieta
     <br/>
-    <label id="Zgoda dane osobowe">Proszę zaznaczyć:</label>
+    <label id="dane_osobowe">Proszę zaznaczyć:</label>
     <br/>
     <input type="checkbox" name="zgoda" value="nie"> Wyrażam zgodę na przekazanie moich danych osobowych<br>
     <input type="checkbox" name="odmowa" value="tak">  Nie wyrażam zgody na przekazanie moich danych osobowych
     <br/>
-    <label id="Wiadomosc">Wiadomosc:</label>
+    <label id="Wiadomosc">Wiadomość:</label>
     <br/>
-    <textarea type="text" name="wiadomosc" id="wiadomosc"></textarea>
+    <textarea name="Komentarz" cols="50" rows="10"></textarea>
     <br/>
     <input type="submit" value="Wyslij"> 
+    <input type="reset" value="Wyczyść dane">
    </form>
 </body>
 </html>
